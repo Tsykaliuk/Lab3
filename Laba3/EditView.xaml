@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="Laba3.EditView"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="EditView"
+    BackgroundColor="White">
+    <ScrollView>
+        <VerticalStackLayout>
+            <HorizontalStackLayout HorizontalOptions="Center">
+                <VerticalStackLayout HorizontalOptions="Center">
+                    <ScrollView HorizontalOptions="Center" VerticalOptions="FillAndExpand">
+                        <Grid
+                            HeightRequest="50"
+                            HorizontalOptions="Center"
+                            VerticalOptions="Start"
+                            WidthRequest="400">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+                            
+                        </Grid>
+                       
+                    </ScrollView>
+                    <Label Text ="Edit menu" FontSize="Title" HorizontalOptions="Center"/>
+                    <ScrollView>
+                        <Grid
+                            HorizontalOptions="Center"
+                            VerticalOptions="FillAndExpand"
+                            WidthRequest="400">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="70" />
+                                <RowDefinition Height="70" />
+                                <RowDefinition Height="70" />
+                                <RowDefinition Height="70" />
+                                <RowDefinition Height="70" />
+                                <RowDefinition Height="70" />
+                            </Grid.RowDefinitions>
+
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="200" />
+                                <ColumnDefinition Width="200" />
+                            </Grid.ColumnDefinitions>
+                           
+                            <Label
+                                Grid.Row="0"
+                                Grid.Column="0"
+                                HorizontalOptions="Center"
+                                Text="Time"
+                                VerticalOptions="Center" />
+
+                            <Entry
+                                Grid.Row="0"
+                                Grid.Column="1"
+                                HorizontalOptions="Center"
+                                Text="{Binding Time}"
+                                VerticalOptions="Center" />
+                            <Label
+                                Grid.Row="2"
+                                Grid.Column="0"
+                                HorizontalOptions="Center"
+                                Text="Day"
+                                VerticalOptions="Center" />
+                            <Entry
+                                Grid.Row="2"
+                                Grid.Column="1"
+                                HorizontalOptions="Center"
+                                Text="{Binding Day}"
+                                VerticalOptions="Center" />
+
+                            <Label
+                                Grid.Row="1"
+                                Grid.Column="0"
+                                HorizontalOptions="Center"
+                                Text="Discipline"
+                                VerticalOptions="Center" />
+                            <Entry
+                                Grid.Row="1"
+                                Grid.Column="1"
+                                HorizontalOptions="Center"
+                                Text="{Binding Discipline}"
+                                VerticalOptions="Center" />
+
+
+                            <Label
+                                Grid.Row="3"
+                                Grid.Column="0"
+                                HorizontalOptions="Center"
+                                Text="Teacher"
+                                VerticalOptions="Center" />
+                            <Entry
+                                Grid.Row="3"
+                                Grid.Column="1"
+                                HorizontalOptions="Center"
+                                Text="{Binding Teacher}"
+                                VerticalOptions="Center" />
+
+                            <Label
+                                Grid.Row="5"
+                                Grid.Column="0"
+                                HorizontalOptions="Center"
+                                Text="Faculty"
+                                VerticalOptions="Center" />
+                            <Entry
+                                Grid.Row="5"
+                                Grid.Column="1"
+                                HorizontalOptions="Center"
+                                Text="{Binding Faculty}"
+                                VerticalOptions="Center" />
+                            <Label
+                                Grid.Row="4"
+                                Grid.Column="0"
+                                HorizontalOptions="Center"
+                                Text="Audience"
+                                VerticalOptions="Center" />
+                            <Entry
+                                Grid.Row="4"
+                                Grid.Column="1"
+                                HorizontalOptions="Center"
+                                Text="{Binding Audience}"
+                                VerticalOptions="Center" />
+
+
+                        </Grid>
+                    </ScrollView>
+                    <ScrollView HorizontalOptions="Center" VerticalOptions="FillAndExpand">
+                        <Grid
+                            HeightRequest="20"
+                            HorizontalOptions="Center"
+                            VerticalOptions="Start"
+                            WidthRequest="400">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="40" />
+                            </Grid.RowDefinitions>
+                        </Grid>
+                    </ScrollView>
+
+                    <HorizontalStackLayout
+                        Padding="10"
+                        HorizontalOptions="Center"
+                        Spacing="50">
+                        <Button
+                            x:Name="CounterBtn"
+                            BackgroundColor="Blue"
+                            Clicked="CancelClicked"
+                            HorizontalOptions="Center"
+                            Text="Cancel"
+                            TextColor="White" />
+                        <Button
+                            x:Name="CounterBtn2"
+                            BackgroundColor="Blue"
+                            Clicked="OkClicked"
+                            HorizontalOptions="Center"
+                            Text="OK"
+                            TextColor="White" />
+                    </HorizontalStackLayout>
+                </VerticalStackLayout>
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

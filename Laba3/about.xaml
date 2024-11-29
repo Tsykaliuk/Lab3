@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Laba3.AboutView"
+             Title="AboutView"
+             BackgroundColor="#2e1437">
+    <VerticalStackLayout VerticalOptions="Center">
+        <Label 
+            Text='Lab 3 "Json Dispatcher",'
+            FontSize="Large"
+            TextColor="AliceBlue"
+            HorizontalOptions="Center" />
+        <Label 
+            Text='developed by Tsykaliuk Maksym, group K-25'
+            FontSize="Large"
+            TextColor="AliceBlue"
+            HorizontalOptions="Center" />
+    </VerticalStackLayout>
+</ContentPage>

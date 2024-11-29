@@ -1,0 +1,38 @@
+[
+  {
+    "IsSelected": true,
+    "Discipline": "Physics",
+    "Teacher": "Petro Petrovich",
+    "Audience": 1,
+    "Faculty": "Physics",
+    "Time": "11:00",
+    "Day": "Tuesday"
+  },
+  {
+    "IsSelected": false,
+    "Discipline": "sadasd",
+    "Teacher": "asdsa",
+    "Audience": 0,
+    "Faculty": "zcxc",
+    "Time": "saddsaasd",
+    "Day": "das"
+  },
+  {
+    "IsSelected": false,
+    "Discipline": "bcv",
+    "Teacher": "te",
+    "Audience": 0,
+    "Faculty": "dfg",
+    "Time": "dgfdg",
+    "Day": "xzc"
+  },
+  {
+    "IsSelected": false,
+    "Discipline": "OOP",
+    "Teacher": "vasin",
+    "Audience": 1,
+    "Faculty": "fcsc",
+    "Time": "tuesday",
+    "Day": "12:00"
+  }
+]
